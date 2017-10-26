@@ -1,5 +1,4 @@
 <?php
-	
 	if(isset($_POST['type'])){
 		if ($_POST['type'] === 'channel'){
 			$file_name = 'datas/channel/' . $_POST['id'] . '.txt';

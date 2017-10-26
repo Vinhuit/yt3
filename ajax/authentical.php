@@ -6,7 +6,7 @@
     $client->setScopes('https://www.googleapis.com/auth/youtube');
     $client->setApprovalPrompt('auto');
     $client->setPrompt('consent');
-    $client->setRedirectUri('http://videoviet.org/authentical.php');
+    $client->setRedirectUri('http://127.0.0.1/yt3');
     $client->setAccessType('offline');
     $youtube = new Google_Service_YouTube($client);
     if (isset($_GET['code'])) {

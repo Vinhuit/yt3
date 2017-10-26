@@ -1,9 +1,9 @@
 <?php
 
 	$GLOBALS['config'] = [
-		'google_key_api' => 'AIzaSyCc7bEYUZ_zD7oB7AG6x211C0HnbtbRCA0',
-		'client_id' => '291373010098-a72md5vm61s6l1uae3ohaipo10oqaeoq.apps.googleusercontent.com',
-		'client_secret' => 'vwekMk4IBC8Fq_gQFsD7SggD',
+		'google_key_api' => 'AIzaSyCw_ahcB3ZyrDl-l7u4eJY-A6Zq-xAb5Dk',
+		'client_id' => '821039443474-ane7lekcr3imq1fds710b4mags6ge52r.apps.googleusercontent.com',
+		'client_secret' => 'mP1rFqTSInYvKZLnnp-NvZLi ',
 		'home_title' => 'Youtube Tool | Giúp bạn làm youtube dễ dàng hơn',
 		'home_url' =>	'http://'. $_SERVER['SERVER_NAME'] .'/v2',
 		'site_name' => 'Youtube Tool',
