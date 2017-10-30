@@ -1,8 +1,8 @@
 <?php
 
     $client = new Google_Client();
-    $client->setClientId($client_id);
-    $client->setClientSecret($client_secret);
+    $client->setClientId('291373010098-a72md5vm61s6l1uae3ohaipo10oqaeoq.apps.googleusercontent.com');
+    $client->setClientSecret('vwekMk4IBC8Fq_gQFsD7SggD');
     $client->setScopes('https://www.googleapis.com/auth/youtube');
     $client->setApprovalPrompt('auto');
     $redirect = filter_var('http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'],
