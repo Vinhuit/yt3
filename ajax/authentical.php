@@ -1,5 +1,5 @@
 <?php
-
+    ini_set('display_errors', 1);
     $client = new Google_Client();
     $client->setClientId('291373010098-a72md5vm61s6l1uae3ohaipo10oqaeoq.apps.googleusercontent.com');
     $client->setClientSecret('vwekMk4IBC8Fq_gQFsD7SggD');
