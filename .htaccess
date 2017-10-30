@@ -1,0 +1,9 @@
+RewriteEngine on
+RewriteRule ^video/(.*).html$ pr.php?id=$1
+SetEnvIf Request_URI "pr.php" noauth=1
+SetEnvIf Request_URI "video/.*\.html" noauth=1
+<Files ajax.php>
+Order allow,deny
+Allow from all
+Satisfy any 
+</Files> 
