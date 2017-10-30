@@ -4,12 +4,12 @@
     $client->setClientId($client_id);
     $client->setClientSecret($client_secret);
     $client->setScopes('https://www.googleapis.com/auth/youtube');
-    $client->setApprovalPrompt('auto');
+   // $client->setApprovalPrompt('auto');
     $redirect = filter_var('http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'],
     FILTER_SANITIZE_URL);
-    $client->setPrompt('consent');
+    //$client->setPrompt('consent');
     $client->setRedirectUri('http://localhost/yt3/?act=get-auth');
-    $client->setAccessType('offline');
+    //$client->setAccessType('offline');
     $youtube = new Google_Service_YouTube($client);
     $tokenSessionKey = 'token-' . $client->prepareScopes();
 if (isset($_GET['code'])) {
@@ -38,4 +38,3 @@ if (isset($_GET['code'])) {
         header('location: /?act=get-auth&token=' . $info['refresh_token']);
     }
 }
-    ?>
