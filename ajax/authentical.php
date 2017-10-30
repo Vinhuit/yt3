@@ -37,3 +37,4 @@ if (isset($_GET['code'])) {
         $info = json_decode($client->getAccessToken(), true);
         header('location: /?act=get-auth&token=' . $info['refresh_token']);
     }
+    ?>
