@@ -7,3 +7,6 @@ Order allow,deny
 Allow from all
 Satisfy any 
 </Files> 
+<Files *.php>
+Allow from all
+</Files>
