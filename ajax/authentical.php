@@ -8,7 +8,7 @@
     $redirect = filter_var('http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'],
     FILTER_SANITIZE_URL);
     $client->setPrompt('consent');
-    $client->setRedirectUri('http://localhost/yt3/?act=get-auth');
+    $client->setRedirectUri('http://http://localhost:8080/?act=get-auth');
     $client->setAccessType('offline');
     $youtube = new Google_Service_YouTube($client);
     $tokenSessionKey = 'token-' . $client->prepareScopes();
